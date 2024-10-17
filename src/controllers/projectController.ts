@@ -13,11 +13,11 @@ export const getProjects = async (
   } catch (error: any) {
     res
       .status(500)
-      .json({ message: `Error retreiving projects: ${error.message}` });
+      .json({ message: `Error retrieving projects: ${error.message}` });
   }
 };
 
-export const createProjects = async (
+export const createProject = async (
   req: Request,
   res: Response
 ): Promise<void> => {
@@ -35,6 +35,6 @@ export const createProjects = async (
   } catch (error: any) {
     res
       .status(500)
-      .json({ message: `Error creating project: ${error.message}` });
+      .json({ message: `Error creating a project: ${error.message}` });
   }
 };
